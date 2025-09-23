@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 test('Verify login with valid credentials', async ({ page }) => {
 await page.goto("https://demoqa.com/automation-practice-form")
 await page.locator("(//li[@id='item-0']//span)[2]").click()
-await page.locator("//input[@placeholder="First Name"]).fill("Ravi")
+await page.locator("").fill('Ravi')
 await page.locator("//input[@id='userEmail']").fill("ravi@123.com")
 await page.locator("label[for='gender-radio-2']").click()
 await page.locator("//input[@id='userNumber']").fill("9876543210")
